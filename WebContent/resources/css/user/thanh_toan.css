@@ -1,0 +1,277 @@
+/* GENERAL */
+main > h2 {
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+main button {
+    color: white;
+    cursor: pointer;
+    border-radius: 10px !important;
+    font-size: medium;
+}
+
+main button:hover {
+    outline: 2px solid black;
+}
+
+input[name="id"] {
+    display: none;
+}
+
+/* PAYMENT ADDRESS */
+#payment-address > h3 {
+    padding: 10px;
+}
+
+#address-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 10px 10px;
+    border-bottom: 1px solid black;
+}
+
+#used-reciver {
+    width: 30%;
+    text-align: center;
+}
+
+#used-address {
+    width: 55%;
+    text-align: justify;
+}
+
+#address-information > button {
+    width: 12%;
+    background-color: rgb(11, 233, 159);
+}
+
+/* PAYMENT PRODUCT */
+#payment-product {
+    margin: 15px 0;
+}
+
+#payment-product-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+#payment-product-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+
+#product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product {
+    display: flex;
+}
+
+.product-image {
+    width: 40%;
+    display: flex;
+    gap: 50px;
+}
+
+.product-image > img {
+    height: 20vh;
+    object-fit: contain;
+}
+
+.product-price {
+    width: 25%;
+}
+
+.product-quantity {
+    width: 25%;
+}
+
+.product-total {
+    width: 10%;
+}
+
+/* PAYMENT METHOD */
+#payment-method {
+    border-top: 1px solid black;
+}
+
+.payment-method-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.payment-method-content {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right: 10px;
+    margin-bottom: 15px;
+}
+
+.labels, .values {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.values {
+    text-align: right;
+}
+
+/* PAYMENT CONFIRM */
+#payment-confirm {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    padding: 15px 10px;
+}
+
+#payment-confirm a {
+    text-decoration: none;
+    font-style: italic;
+    color: blue;
+}
+
+#payment-confirm > button {
+    width: 15% !important;
+    padding: 10px !important;
+    background-color: rgb(40, 40, 231);
+}
+
+#payment-confirm > button > ion-icon {
+    font-size: xx-large !important;
+}
+
+/* MODAL ADDRESS */
+#modals {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modals ion-icon {
+    font-size: large;
+    display: block;
+}
+
+.modal {
+    position: fixed;
+    pointer-events: visible;
+}
+
+/* MODAL-MODE */
+.inactive {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.close {
+    display: none;
+}
+
+.lock-scroll {
+    overflow-y: hidden;
+}
+
+/* MODAL-TITLE */
+.modal-title {
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    background-color: #001C40;
+}
+
+.modal-title > p {
+    font-size: large;
+    font-weight: bold;
+    text-indent: 10px;
+}
+
+/* MODAL-CONTENT */
+.modal-content {
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    background-color: #F5F5F5;
+    max-height: 500px;
+    overflow-y: hidden;
+}
+
+.modal-content:hover {
+    overflow-y: auto;
+}
+
+/* FORM */
+#modal-address {
+    width: 60%;
+}
+
+#address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.address-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    border: 2px dashed black;
+}
+
+.address-item input, .address-item textarea {
+    min-width: 12%;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    font-size: medium;
+    color: black;
+}
+
+.address-item textarea {
+    width: 100%;
+    max-height: 36px;
+    text-align: justify;
+    resize: none;
+    overflow: hidden;
+}
+
+.address-item > button {
+    width: 22%;
+    font-size: small;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: skyblue;
+    cursor: pointer;
+}
+
+.item-information {
+    display: flex;
+    align-items: center;
+    line-height: 24px;
+}
+
+.item-information > ion-icon {
+    width: 5%;
+}

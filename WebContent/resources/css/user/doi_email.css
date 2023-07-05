@@ -1,0 +1,74 @@
+/* GENERAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    align-items: center;
+    background-color: lightblue;
+}
+
+main {
+    width: 35% !important;
+    min-height: 32vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    background: #eee;
+}
+
+button:hover {
+    outline: 2px solid black;
+}
+
+/* HEADER */
+main > header {
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* FORM */
+#email-confirmation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 7vh;
+}
+
+#email-confirmation > label {
+    width: 35%;
+}
+
+#email-confirmation > input {
+    width: 55%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#action {
+    display: flex;
+    justify-content: space-around;
+}
+
+#action > button {
+    width: 30% !important;
+    border-radius: 10px !important;
+    cursor: pointer;
+}
+
+#action > button > ion-icon {
+    font-size: xx-large !important;
+}
+
+button[name="confirm"]:hover > ion-icon {
+    color: green;
+}
+
+button[name="cancel"]:hover > ion-icon {
+    color: red;
+}

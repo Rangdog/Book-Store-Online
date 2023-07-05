@@ -1,0 +1,127 @@
+/* GENERAL */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'JetBrains Mono', sans-serif;
+}
+
+/* HEADER */
+header {
+    margin: 10px 0 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#staff > img {
+    height: 15vh;
+    object-fit: contain;
+}
+
+#staff {
+    width: 20%;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #C6DEFD;
+    border-radius: 5px 0 0 5px;
+}
+
+#title {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #001C40;
+    border-radius: 0 5px 5px 0;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+}
+
+/* MAIN */
+main {
+    margin: auto;
+    width: 80%;
+}
+
+table {
+    width: 100%;
+}
+
+th:first-child, td:first-child {
+    width: 15%;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 20%;
+}
+
+th:nth-child(3), td:nth-child(3) {
+    width: 30%;
+}
+
+th:nth-child(4), td:nth-child(4) {
+    width: 15%;
+}
+
+th:last-child, td:last-child {
+    width: 20%;
+}
+
+thead {
+    height: 50px;
+    font-size: medium;
+    background-color: royalblue;
+}
+
+td {
+    height: 45px;
+    padding: 10px;
+    background-color: #F5F5F5;
+    max-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+td:last-child {
+    padding: 0;
+    text-align: center;
+}
+
+ion-icon {
+    display: block;
+    margin: auto;
+    font-size: x-large;
+}
+
+td > button {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+button[name="view"] {
+    color: gold;
+    background-color: yellow;
+}
+
+button[name="deliver"] {
+    color: royalblue;
+    background-color: blue;
+}
+
+button[name="complete"] {
+    color: greenyellow;
+    background-color: green;
+}
+
+button[name="refund"] {
+    color: tomato;
+    background-color: red;
+}

@@ -1,0 +1,87 @@
+/* GENERAL */
+* {
+    box-sizing: border-box;
+}
+
+/* ACCOUNT TITLE */
+#account-title {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 40px;
+    background-color: #F5F5F5;
+}
+
+/* ACCOUNT CONTENT */
+#account-content {
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+#account-information {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#account-information > button {
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#account-information > button > ion-icon {
+    font-size: x-large;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.form-group > label {
+    width: 20%;
+}
+
+.form-group input {
+    width: 60%;
+    padding: 10px;
+}
+
+.form-group input[type="radio"] {
+    width: 5%;
+}
+
+.form-group label[for="male"], .form-group label[for="female"] {
+    width: 10%;
+}
+
+.form-group > a {
+    color: black;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.form-group > a:hover {
+    text-decoration: underline;
+}
+
+/* IMAGE */
+#account-image {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#account-image > img {
+    width: 80%;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 1px solid black;
+}

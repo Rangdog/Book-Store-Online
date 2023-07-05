@@ -1,0 +1,123 @@
+/* GENERAL */
+.button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button > ion-icon {
+    display: block;
+    margin: auto;
+}
+
+/* TYPE: TEXT & ICON */
+.text-button {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.icon-button {
+    width: fit-content;
+    padding: 5px;
+}
+
+.text-button > ion-icon {
+    width: 30%;
+}
+
+.text-button > p {
+    width: 70%;
+    cursor: inherit;
+    font-weight: bolder;
+}
+
+.action-choices {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+/* LOG-OUT BUTTON */
+button[name="log-out"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 11px;
+    border-radius: 0 !important;
+    color: #FFD43B;
+    background-color: #001C40;
+}
+
+button[name="log-out"]:hover {
+    background-color: yellow;
+}
+
+/* CLOSE BUTTON */
+button[name="close"] {
+    width: 50px;
+    height: 100%;
+    color: white;
+    border-radius: initial;
+    border-top-right-radius: 4px;
+    background-color: inherit;
+    transition: background 0.5s ease-out;
+}
+
+button[name="close"]:hover {
+    background-color: red;
+}
+
+/* BACK BUTTON */
+button[name="back"] {
+    position: absolute;
+    margin-left: 45px;
+    margin-top: -61.5px;
+    border: none;
+    color: yellow;
+    background-color: transparent;
+}
+
+button[name="back"] > ion-icon {
+    font-size: xx-large;
+}
+
+/* STYLE: INSERT, UPDATE, DELETE, VIEW, CONFIRM, CANCEL & BLOCK */
+.insert {
+    background-color: lightgreen;
+}
+
+.update {
+    background-color: lightskyblue;
+}
+
+.delete {
+    background-color: crimson;
+}
+
+.view {
+    background-color: lightyellow;
+}
+
+.confirm {
+    background-color: lightseagreen;
+}
+
+.cancel {
+    background-color: lightcoral;
+}
+
+.block {
+    background-color: lightsalmon;
+}
+
+#page-view-genre .sup-product,#page-view-author .sup-product{
+	position: absolute;
+    margin-left: 150px;
+    margin-top: -61.5px;
+    border: none;
+    color: yellow;
+    background-color: transparent;
+    font-size: xx-large;
+}

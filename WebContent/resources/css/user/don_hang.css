@@ -1,0 +1,106 @@
+/* GENERAL */
+label, p {
+    padding: 5px;
+}
+
+body {
+	background-color: transparent !important;
+}
+
+hr {
+    margin: 5px 0;
+}
+
+button {
+    width: 12%;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: blue;
+    background-color: transparent;
+    border: 1px solid blue;
+}
+
+button:hover {
+    outline: 2px solid blue;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+nav a {
+    width: 17%;
+
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav a:hover {
+    background-color: #eee;
+}
+
+nav a:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+nav a:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+/* SEARCH BAR */
+.search-bar {
+    margin: 20px 0;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar > label {
+    width: 5%;
+}
+
+.search-bar > input {
+    width: 95%;
+    border: none;
+    outline: none;
+}
+
+.search-bar > label > ion-icon {
+    display: block;
+    margin: auto;
+    padding: 5px;
+    font-size: larger;
+}
+
+/* ORDER */
+.list {
+    margin: 10px 0;
+}
+
+.order {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.action {
+    margin-top: 10px;
+    text-align: right;
+}

@@ -1,0 +1,92 @@
+/* GENERAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: lightblue;
+}
+
+main {
+    width: 35% !important;
+    min-height: 58vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #f5f5f5;
+}
+
+ion-icon {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+input {
+    padding: 10px;
+    width: 90%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    outline: 2px solid black;
+}
+
+/* PASSWORD FORM */
+main > header {
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    padding: 5px;
+}
+
+main > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+main > form > div {
+    width: 80%;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-box > div {
+    display: flex;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#action {
+    display: flex;
+    justify-content: space-around;
+}
+
+#action > button {
+    width: 35% !important;
+    border-radius: 10px !important;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#action > button > ion-icon {
+    font-size: xx-large !important;
+}
+
+button[name="confirm"]:hover > ion-icon {
+    color: green;
+}
+
+button[name="cancel"]:hover > ion-icon {
+    color: red;
+}

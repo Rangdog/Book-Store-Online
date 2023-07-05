@@ -1,0 +1,142 @@
+/* GENERAL */
+body {
+    min-height: 100vh;
+}
+
+label, p {
+    padding: 5px;
+}
+
+ion-icon {
+    display: block;
+    margin: auto;
+}
+
+/* NOTHING - CART */
+#nothing-cart {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+#nothing-cart > button {
+    width: 20%;
+    color: rgb(86, 83, 83);
+    font-size: medium;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: yellow;
+}
+
+#nothing-cart > button:hover {
+    outline: 2px solid gold;
+}
+
+/* HAVING CART */
+#having-cart {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* LABELS */
+.labels {
+    display: flex;
+    padding: 5px 0;
+}
+
+.labels > * {
+    width: 20%;
+    box-sizing: border-box;
+}
+
+/* PRODUCTS */
+#having-cart > form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.products {
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+}
+
+.product > * {
+    width: 20%;
+}
+
+.product button {
+    width: 20%;
+    border: none;
+    background-color: transparent;
+    font-size: larger;
+    cursor: pointer;
+}
+
+button[name="delete"] {
+    font-size: 1.75em;
+}
+
+.product-information > img {
+    height: 15vh;
+    object-fit: contain;
+}
+
+.quantity {
+    display: flex;
+    text-align: center;
+}
+
+.quantity > * {
+    width: 20%;
+}
+
+/* ORDER */
+#order {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+#order > div {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+#order > div:last-child {
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+#order > div:last-child > button {
+    width: 15% !important;
+    height: fit-content;
+    color: white;
+    border-radius: 10px !important;
+    background-color: rgb(40, 40, 231);
+    cursor: pointer;
+}
+
+#order > div:last-child > button > ion-icon {
+    font-size: xx-large;
+}
+
+#order > div:last-child > button:hover {
+    border: 2px solid black;
+}

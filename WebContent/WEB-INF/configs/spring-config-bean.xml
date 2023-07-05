@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+			http://www.springframework.org/schema/beans/spring-beans.xsd 
+			http://www.springframework.org/schema/context 
+			http://www.springframework.org/schema/context/spring-context.xsd 
+			http://www.springframework.org/schema/tx 
+			http://www.springframework.org/schema/tx/spring-tx.xsd 
+			http://www.springframework.org/schema/mvc 
+			http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+    <!-- DAO CONFIGURATION -->
+    <bean id="DAOTaiKhoan" class="poly.dao.DAOImplement.TaiKhoanImplement">
+    	<constructor-arg><ref bean="sessionFactory" /></constructor-arg>
+	</bean>
+    <bean id="DAONhanVien" class="poly.dao.DAOImplement.NhanVienImplement">
+    	<constructor-arg><ref bean="sessionFactory" /></constructor-arg>
+	</bean>
+    <bean id="DAODanhMuc" class="poly.dao.DAOImplement.DanhMucImplement">
+    	<constructor-arg><ref bean="sessionFactory" /></constructor-arg>
+	</bean>
+	<bean id="DAOTheLoai" class="poly.dao.DAOImplement.TheLoaiImplement">
+    	<constructor-arg><ref bean="sessionFactory" /></constructor-arg>
+	</bean>
+	<bean id="DAONhaXuatBan" class="poly.dao.DAOImplement.NhaXuatBanImplement">
+    	<constructor-arg><ref bean="sessionFactory" /></constructor-arg>
+	</bean>
+	<bean id="DAONhaPhatHanh" class="poly.dao.DAOImplement.NhaPhatHanhImplement">
+    	<constructor-arg><ref bean="sessionFactory" /></constructor-arg>
+	</bean>
+	<bean id="DAOTacGia" class="poly.dao.DAOImplement.TacGiaImplement">
+    	<constructor-arg><ref bean="sessionFactory" /></constructor-arg>
+	</bean>
+	<bean id="DAOKhachHang" class="poly.dao.DAOImplement.KhachHangImplement">
+    	<constructor-arg><ref bean="sessionFactory" /></constructor-arg>
+	</bean>
+	<bean id="DAOSach" class="poly.dao.DAOImplement.SachImplement">
+    	<constructor-arg><ref bean="sessionFactory" /></constructor-arg>
+	</bean>
+	<bean id="DAOKhuyenMai" class="poly.dao.DAOImplement.KhuyenMaiImplement">
+    	<constructor-arg><ref bean="sessionFactory" /></constructor-arg>
+	</bean>
+	<bean id="DAOPhieuNhap" class="poly.dao.DAOImplement.PhieuNhapImplement">
+    	<constructor-arg><ref bean="sessionFactory" /></constructor-arg>
+	</bean>
+	<bean id="DAOChiTietPhieuNhap" class="poly.dao.DAOImplement.ChiTietPhieuNhapImplement">
+    	<constructor-arg><ref bean="sessionFactory" /></constructor-arg>
+	</bean>
+	<bean id="DAODiaChiGiaoHang" class="poly.dao.DAOImplement.DiaChiGiaoHangImplement">
+    	<constructor-arg><ref bean="sessionFactory" /></constructor-arg>
+	</bean>
+	<bean id="DAODonHang" class="poly.dao.DAOImplement.DonHangImplement">
+    	<constructor-arg><ref bean="sessionFactory" /></constructor-arg>
+	</bean>
+	<bean id="DAOChiTietDonHang" class="poly.dao.DAOImplement.ChiTietDonHangImplement">
+    	<constructor-arg><ref bean="sessionFactory" /></constructor-arg>
+	</bean>
+	<bean id="DAOChiTietGioHang" class="poly.dao.DAOImplement.ChiTietGioHangImplement">
+    	<constructor-arg><ref bean="sessionFactory" /></constructor-arg>
+	</bean>
+</beans>

@@ -1,0 +1,43 @@
+/* GENERAL */
+body {
+    min-height: 100vh;
+    background-color: transparent !important;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.label-value > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* ORDER INFORMATION */
+#order-information {
+    display: flex;
+    justify-content: space-between;
+}
+
+#order-information > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* ADDRESS INFORMATION */
+#address-information {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* PAYMENT INFORMATION */
+#payment-information {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}

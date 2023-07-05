@@ -1,0 +1,134 @@
+#page-statistic {
+    width: 90%;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    margin: auto;
+}
+
+/* FILTER */
+#filter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#filter > button {
+    width: 15%;
+    background-color: aquamarine;
+}
+
+#filter input, select {
+    padding: 5px;
+    cursor: pointer;
+}
+
+#general-filter, #specific-filter {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+#specific-filter {
+    justify-content: space-between;
+}
+
+#general-filter label {
+    width: 16%;
+}
+
+#general-filter select {
+    width: 29.05%;
+    border-radius: 5px;
+}
+
+#specific-filter > div {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#specific-filter label {
+    width: 35%;
+}
+
+#specific-filter input {
+    width: 60%;
+}
+
+/* DISPLAY */
+#display {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* SUMMARY */
+#summary {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    width: 24%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.item ion-icon {
+    min-height: 100%;
+    display: block;
+    margin: auto;
+    font-size: 50px;
+}
+
+.item > div:first-child {
+    width: 35%;
+    height: 90%;
+    border-radius: 5px;
+}
+
+.statistic-value {
+    width: 60%;
+    height: 85%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.statistic-value > label {
+    color: tomato;
+    font-size: medium;
+}
+
+.statistic-value > p {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+}
+
+.statistic-value > p:hover {
+    overflow: auto;
+    text-overflow: clip;
+}
+
+/* CHARTS */
+#charts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}

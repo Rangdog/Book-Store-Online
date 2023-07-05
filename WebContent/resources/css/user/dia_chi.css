@@ -1,0 +1,362 @@
+/* GENERAL */
+* {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button {
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    background: #1D337F;
+}
+
+.hide {
+    display: none !important;
+}
+
+.make-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* HEADER */
+header {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header > label {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+#add-address {
+    background: #008DD6;
+}
+
+#add-address > ion-icon {
+    font-size: x-large !important;
+}
+
+#add-address > p {
+    width: 90% !important;
+}
+
+/* CONTENT */
+.address {
+    background-color: #F5F5F5;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.address > div {
+    justify-content: flex-start;
+    gap: 15%;
+}
+
+.information {
+    width: 60%;
+}
+
+.information > div {
+    justify-content: flex-start;
+    gap: 20%;
+}
+
+.information > p {
+    margin: 5px 0;
+    line-height: 4vh;
+}
+
+.address-default {
+    color: #F84A2E;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 10vw;
+    height: 5vh;
+    border: 2px solid #F84A2E;
+}
+
+.operation > div > button {
+    padding: 7px;
+    font-size: 14px;
+}
+
+
+
+.btn-update{
+	background-color: limegreen;
+    width: 100%;
+    border-radius: 5px 0 0 0;
+}
+.default{
+	background: #008DD6;
+    border-radius: 0 0 5px 5px;
+}
+.delete{
+	background-color: tomato;
+    width: 100%;
+    border-radius: 0 5px 0 0;
+}
+/* MODAL */
+#modal, #modal-update , #delete{
+ 	min-width: 100vw;
+    min-height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#delete .modal-inner{
+	background-color: #FFF2CD;
+    width: 35vw;
+    height: 18vh;
+    border-radius: 5px;
+    border: 2px solid black;
+    overflow: hidden;
+    animation: showModal 0.3s linear;
+}
+
+#delete .modal-footer > button {
+    width: 20%;
+    padding: 15px !important;
+    background-color:#FF0000;
+}
+
+.modal-inner {
+    background-color: #FFF2CD;
+    width: 50vw;
+    height: 75vh;
+    border-radius: 5px;
+    border: 2px solid black;
+    overflow: hidden;
+    animation: showModal 0.3s linear;
+}
+
+.modal-hearder {
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-weight: bold;
+    background-color: lightcoral;
+    position: relative;
+}
+
+.modal-hearder ion-icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-51%);
+    font-size: larger;
+    background-color: rgb(231, 16, 16);
+    height: inherit;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+
+.modal-hearder ion-icon:hover {
+    opacity: 0.8;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.name-of-customer,
+.number-of-customer,
+.address-of-customer,
+.type-of-customer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.address-of-customer {
+    align-items: flex-start !important;
+}
+
+.name-of-customer p,
+.number-of-customer p,
+.address-of-customer p,
+.type-of-customer p {
+    width: 30%;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.name-of-customer input,
+.number-of-customer input,
+.address-of-customer textarea {
+    width: 70%;
+    padding: 5px;
+}
+
+
+.default-customer label {
+    font-weight: normal;
+}
+
+.default-customer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.modal-footer > button {
+    width: 20%;
+    padding: 15px !important;
+    background-color: limegreen;
+}
+
+@keyframes showModal {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+/*TOAST MESSAGE*/
+#toast {
+  position: fixed;
+  top: 32px;
+  right: 32px;
+  z-index: 999999;
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 20px 0;
+  min-width: 400px;
+  max-width: 450px;
+  border-left: 4px solid;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+  transition: all linear 0.3s;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(calc(100% + 32px));
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+.toast--success {
+  border-color: #47d864;
+}
+
+.toast--success .toast__icon {
+  color: #47d864;
+}
+
+.toast--info {
+  border-color: #2f86eb;
+}
+
+.toast--info .toast__icon {
+  color: #2f86eb;
+}
+
+.toast--warning {
+  border-color: #ffc021;
+}
+
+.toast--warning .toast__icon {
+  color: #ffc021;
+}
+
+.toast--error {
+  border-color: #ff623d;
+}
+
+.toast--error .toast__icon {
+  color: #ff623d;
+}
+
+.toast + .toast {
+  margin-top: 24px;
+}
+
+.toast__icon {
+  font-size: 24px;
+}
+
+.toast__icon,
+.toast__close {
+  padding: 0 16px;
+}
+
+.toast__body {
+  flex-grow: 1;
+}
+
+.toast__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.toast__msg {
+  font-size: 14px;
+  color: #888;
+  margin-top: 6px;
+  line-height: 1.5;
+}
+
+.toast__close {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+

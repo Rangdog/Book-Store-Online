@@ -1,0 +1,21 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product > img {
+    height: 20vh;
+    object-fit: contain;
+}
+
+.product > div {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,401 @@
+/* GENERAL */
+#modals {
+    min-width: 100vw;
+    min-height: 100vh;
+    position: absolute;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    position: absolute;
+    pointer-events: visible;
+}
+
+/* MODAL-MODE */
+.inactive {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.close {
+    display: none;
+}
+
+/* MODAL-TITLE */
+.modal-title {
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    background-color: #001C40;
+}
+
+.modal-title > p {
+    font-size: large;
+    font-weight: bold;
+    text-indent: 10px;
+}
+
+/* MODAL-CONTENT */
+.modal-content {
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    background-color: #F5F5F5;
+}
+
+/* OVERRIDE CSS */
+.modal ion-icon {
+    font-size: large;
+}
+
+/*MODEL STAFF*/
+#update-staff {
+    width: 40%;
+}
+
+#update-staff .labels, .values {
+    width: 45% !important;
+}
+
+#update-staff form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+#update-staff img {
+    width: 25%;
+    border-radius: 50%;
+}
+
+#insert-staff {
+    width: 40%;
+}
+
+#insert-staff .labels, .values {
+    width: 45% !important;
+}
+
+#insert-staff form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+#insert-staff img {
+    width: 25%;
+    border-radius: 50%;
+}
+.upload{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+/* MODAL ORDER */
+#view-order {
+    width: 65%;
+}
+
+#view-order > .modal-content > div {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px 0;
+    margin: auto;
+}
+
+.label-value > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#order-information {
+    display: flex;
+    justify-content: space-between;
+}
+
+#order-information > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+#address-information {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#payment-information {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+/* MODAL CUSTOMER */
+#view-customer {
+    width: 40%;
+}
+
+#view-customer .labels, .values {
+    width: 45% !important;
+}
+
+#view-customer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+#view-customer img {
+    width: 25%;
+    border-radius: 50%;
+}
+
+/* MODAL PRODUCT */
+.modal-product {
+    width: 65%;
+    max-height: 95vh;
+}
+
+.modal-product form {
+    display: flex;
+    max-height: 80vh;
+    overflow: hidden;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.modal-product form button {
+    width: 15% !important;
+    margin: auto;
+}
+
+.modal-product form:hover {
+    overflow: auto;
+}
+
+.first-information {
+    min-height: 35vh;
+    display: flex;
+}
+
+.first-information > div:first-child {
+    width: 35%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.first-information > div:first-child > img {
+    width: 70%;
+    height: 28vh;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: rgba(238, 238, 238, 0.78);
+}
+
+.first-information > div:last-child {
+    width: 65%;
+}
+
+.second-information {
+    display: flex;
+    height: 30vh;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.second-information > div {
+    width: 48%;
+}
+
+.third-information {
+    display: flex;
+    justify-content: center;
+    gap: 4.25px;
+}
+
+.third-information > label {
+    width: 9%;
+}
+
+.third-information > textarea {
+    width: 86%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    resize: none;
+}
+
+/* MODAL SALE */
+.modal-sale {
+    width: 35%;
+}
+
+.modal-sale form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+}
+
+.modal-sale form button {
+    width: 25% !important;
+}
+
+
+/* MODAL INSERT VIEW SALE */
+#insert-view-sale {
+    width: 40%;
+}
+
+#insert-view-sale form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* PERSONAL-MODAL */
+.modal-inner {
+    width: 35vw;
+    height: 40vh;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    overflow: hidden;
+    animation: showModal 0.5s linear;
+    pointer-events: visible;
+}
+
+.modal-header {
+    height: 7vh;
+    background-color: #e26e70; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: large;
+    font-weight: bold;
+}
+
+.modal-header button {
+    width: 15%;
+}
+
+.modal-header h2 {
+    text-align: center;
+    width: 85%;
+}
+
+.modal-header button ion-icon {
+    font-size: xx-large;
+}
+
+.modal-body {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.modal-body > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.modal-body > div input, .modal-body > div select {
+    width: 65%;
+    height: 30px;
+}
+
+.modal-body > div p {
+    width: 25%;
+    text-align: left;
+}
+
+#insert-publisher .modal-body > div p,
+#update-publisher .modal-body > div p {
+    width: 30%;
+}   
+
+#insert-issuer .modal-body > div p,
+#update-issuer .modal-body > div p {
+    width: 35%;
+}   
+
+
+.modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.modal-footer button {
+    width: 10vw;
+    height: 5vh;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modal-footer button:hover {
+    opacity: 0.7;
+}
+
+/* MODAL ORDER*/
+.modal-order {
+    width: 35%;
+}
+.modal-order form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.modal-order .filling-form{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal-order form div select{
+	width: 80%;
+	height: 10%;
+}
+.modal-order form button {
+    width: 25% !important;
+}
+
+#cancel .modal-content form{
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction:column;
+   	justify-content: center;
+   	align-items:center;
+    gap: 20px
+}
+#cancel .modal-content .button{
+	width: 20%;
+    padding: 10px;
+}

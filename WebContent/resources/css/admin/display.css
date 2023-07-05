@@ -1,0 +1,305 @@
+/* PAGE */
+.page {
+    min-height: 90vh;
+    display: none;
+    justify-content: center;
+}
+
+.form-page {
+    align-items: center;
+}
+
+.form-page > form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.data-page > form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* OPEN-MODE */
+.open {
+    display: flex;
+}
+
+
+/* FORM */
+.filling-form {
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+
+/* CSS ALL */
+.labels, .values {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2vh;
+}
+
+.labels *, .values * {
+    padding: 5px;
+}
+
+/* CSS ONE */
+.horizontal-display, .vertical-display {
+    width: 100%;
+    display: flex;
+}
+
+.horizontal-display > label {
+    width: 20%;
+}
+
+.horizontal-display > input {
+    width: 80%;
+}
+
+.vertical-display {
+    flex-direction: column;
+}
+
+.horizontal-display > *, .vertical-display > * {
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* ACCOUNT FORM */
+.labels > div, .values > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.labels > div:first-child, .values > div:first-child {
+    min-height: 25vh;
+}
+
+/* INSERT VIEW SALE FORM */
+#page-view-sale > form {
+    gap: 10vh;
+    align-items: center;
+}
+
+#page-view-sale > form > div {
+    width: 75%;
+}
+
+.bookmark {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#actions {
+    display: flex;
+    gap: 20px;
+}
+
+#sale-information {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#detail-information {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#detail-information p {
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#percentage-information {
+    display: flex;
+    gap: 10.5%;
+}
+
+#percentage-information > div {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#date-information {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#date-information > ion-icon:first-child {
+    font-size: xx-large;
+    margin-right: 32px;
+}
+
+#date-information > p {
+    width: 20%;
+}
+
+
+/* TABLE */
+table, th, td {
+    border: none;
+    text-align: center;
+}
+
+th {
+	background-color: royalblue;
+}
+
+td {
+	background-color: #cfcfcf;
+}
+
+table {
+    display: block;
+    max-height: 70vh;
+    overflow: hidden;
+}
+
+table:hover {
+    overflow: auto;
+}
+
+th, td {
+    padding: 5px;
+}
+
+td {
+    max-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+td:hover {
+    overflow: auto;
+    text-overflow: clip;
+}
+
+/* PAGE STAFF*/
+#page-staff th, #page-staff td {
+    width: 10%;
+}
+
+#page-staff th:first-child, #page-staff td:first-child {
+    width: 5%;
+}
+
+/* PAGE ORDER */
+#page-order th, #page-order td {
+    width: 10%;
+}
+
+#page-order th:first-child, #page-order td:first-child {
+    width: 5%;
+}
+
+/* PAGE CUSTOMER */
+#page-customer th, #page-customer td {
+    width: 10%;
+}
+
+#page-customer th:first-child, #page-customer td:first-child {
+    width: 5%;
+}
+
+/* PRODUCT DETAIL */
+.product-detail th, .product-detail td {
+    width: 10%;
+}
+
+.product-detail th:first-child, .product-detail td:first-child {
+    width: 5%;
+}
+
+/* PAGE PRODUCT */
+#page-product th, #page-product td {
+    width: 10%;
+}
+
+#page-product th:first-child, #page-product td:first-child {
+    width: 5%;
+}
+
+#page-product th:nth-child(8), #page-product td:nth-child(8) {
+    width: 9%;
+}
+
+.image-product{
+    height: 15vh;
+    object-fit: cover;
+}
+
+/* PAGE SALE */
+#page-sale th, #page-sale td {
+    width: 10%;
+}
+
+#page-sale th:first-child, #page-sale td:first-child {
+    width: 5%;
+}
+
+/* PAGE VIEW SALE */
+#applied-products > table {
+    margin-top: 20px;
+    max-height: 50vh !important;
+}
+
+#applied-products th, #applied-products td {
+    width: 15%;
+}
+
+#applied-products th:first-child, #applied-products td:first-child {
+    width: 2%;
+}
+
+#applied-products th:nth-child(2), #applied-products td:nth-child(2) {
+    width: 3%;
+}
+
+/* PAGE INSERT VIEW SALE */
+#insert-view-sale table {
+    width: 100%;
+    margin-top: 20px;
+    max-height: 50vh !important;
+}
+
+#insert-view-sale th, #insert-view-sale td {
+    padding: 5px;
+}
+
+#insert-view-sale th {
+    width: 5%;
+}
+
+#insert-view-sale th:first-child, #insert-view-sale td:first-child {
+    width: 0.5%;
+}
+
+#insert-view-sale th:nth-child(2), #insert-view-sale td:nth-child(2) {
+    width: 1%;
+}
+
+/* PAGE IMPORT */
+#page-import th, #page-import td {
+    width: 10%;
+}
+
+#page-import th:first-child, #page-import td:first-child {
+    width: 5%;
+}
